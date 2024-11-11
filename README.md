@@ -121,6 +121,7 @@ Add --UseUnpackTree to the above if you wish to find unpacked rates(L1 rates wit
 To produce L1Rate plots, one requires the output .csv files produced by the rate-estimation tool from L1MenuTools. The python script top\_ten\_rates.py expects 2 files as input in order:
 1. Unpacked rates .csv file
 2. Customized rates .csv file
+   
 The program will output a list of L1Seed names (that pass selection criteria: prescale = 1 and L1Rate > cutoff) in order of how much it has been affected by customization. One can choose to select the L1Seeds of interest from this list and save it in a file like example file L1SeedsOrdered. This will be an imput to the rate\_plotter.py script. 
 
 rate\_plotter.py has a control center for most required functionality. It expects a file with a list of L1Seeds to plot, in ansense of which, it'll plot from a pre-provided list of L1Bits. The script requires an installation of matplotlib and requires python3.6 or above. To use the scipt:
